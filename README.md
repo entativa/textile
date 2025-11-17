@@ -2,6 +2,46 @@
 <p align="center">
 <img src="[URL_TO_TEXTILE_LOGO.svg]" alt="Textile Logo" width="180"/>
 </p>
+<p align="center">
+  
+  <!-- Build & Pipeline -->
+  <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/CI/CD-GitHub%20Actions-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Tests-3475%20Passed-brightgreen?style=for-the-badge" />
+
+  <!-- Versioning -->
+  <img src="https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/API%20Stability-Stable-success?style=for-the-badge" />
+
+  <!-- License (Proprietary RED) -->
+  <img src="https://img.shields.io/badge/License-Proprietary-critical?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Internal%20Use-Only-red?style=for-the-badge" />
+
+  <!-- Security -->
+  <img src="https://img.shields.io/badge/Security%20Scan-Passed-36C?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Dependencies-Secure-brightgreen?style=for-the-badge" />
+
+  <!-- Coverage -->
+  <img src="https://img.shields.io/badge/Coverage-92%25-success?style=for-the-badge" />
+
+  <!-- Platform & Architecture -->
+  <img src="https://img.shields.io/badge/Architecture-Hybrid%20Polyglot-FF9800?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Microservices-K8s%20%2F%20Istio-009688?style=for-the-badge" />
+
+  <!-- Stacks -->
+  <img src="https://img.shields.io/badge/Backend-Rust-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Backend-Kotlin-7F52FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Datastore-PostgreSQL-336791?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Datastore-Cassandra-1287B1?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Cache-Redis-D92E2A?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Search-ElasticSearch-F8DC75?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Event%20Bus-Kafka-231F20?style=for-the-badge" />
+
+  <!-- Clients -->
+  <img src="https://img.shields.io/badge/iOS-SwiftUI-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Android-Compose-green?style=for-the-badge" />
+
+</p>
 Engineered to scale, built for performance. The proprietary social media platform successor.
 🔒 Confidentiality Notice
 This software is Proprietary and intended solely for internal organizational use. All source code, architectural designs, and associated documentation are confidential and must not be disseminated externally.
