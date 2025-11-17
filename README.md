@@ -1,124 +1,204 @@
 🧶 Textile Platform
+
 <p align="center">
-<img src="[URL_TO_TEXTILE_LOGO.svg]" alt="Textile Logo" width="180"/>
+  <img src="[URL_TO_TEXTILE_LOGO.svg]" alt="Textile Logo" width="180"/>
+</p><p align="center">
+  <strong>A hyper-scalable, polyglot social platform engineered to surpass modern networks.</strong>
 </p>
-<p align="center">
-  
-  <!-- Build & Pipeline -->
-  <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/CI/CD-GitHub%20Actions-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Tests-3475%20Passed-brightgreen?style=for-the-badge" />
+---
 
-  <!-- Versioning -->
-  <img src="https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/API%20Stability-Stable-success?style=for-the-badge" />
+📛 Status & Compliance
 
-  <!-- License (Proprietary RED) -->
-  <img src="https://img.shields.io/badge/License-Proprietary-critical?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Internal%20Use-Only-red?style=for-the-badge" />
+<p align="center"><!-- Build --><img src="https://img.shields.io/badge/Build-Passing-4CAF50?style=for-the-badge&logo=githubactions&logoColor=white"/><!-- Version --><img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=semanticrelease&logoColor=white"/><!-- Proprietary --><img src="https://img.shields.io/badge/License-PROPRIETARY-critical?style=for-the-badge&logo=gitbook&logoColor=white"/><!-- Internal Use --><img src="https://img.shields.io/badge/Internal_Use_Only-black?style=for-the-badge&logo=privateinternetaccess&logoColor=white"/><!-- Microservices --><img src="https://img.shields.io/badge/Microservices-Polyglot-8E24AA?style=for-the-badge&logo=microservices&logoColor=white"/><!-- Encrypted --><img src="https://img.shields.io/badge/DMs-End--to--End_Encrypted-2196F3?style=for-the-badge&logo=lock&logoColor=white"/><!-- Infra --><img src="https://img.shields.io/badge/Infrastructure-Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/><!-- Architecture --><img src="https://img.shields.io/badge/Architecture-Hybrid_Microservices-009688?style=for-the-badge&logo=diagram&logoColor=white"/><!-- Rust --><img src="https://img.shields.io/badge/Rust_Perf_Services-000000?style=for-the-badge&logo=rust&logoColor=white"/><!-- Kotlin --><img src="https://img.shields.io/badge/Kotlin_Business_Logic-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"/><!-- Kafka --><img src="https://img.shields.io/badge/Event_Bus-Kafka-000?style=for-the-badge&logo=apachekafka&logoColor=white"/><!-- Secure --><img src="https://img.shields.io/badge/Security-Hardend-FF5252?style=for-the-badge&logo=shield&logoColor=white"/></p>
+---
 
-  <!-- Security -->
-  <img src="https://img.shields.io/badge/Security%20Scan-Passed-36C?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Dependencies-Secure-brightgreen?style=for-the-badge" />
-
-  <!-- Coverage -->
-  <img src="https://img.shields.io/badge/Coverage-92%25-success?style=for-the-badge" />
-
-  <!-- Platform & Architecture -->
-  <img src="https://img.shields.io/badge/Architecture-Hybrid%20Polyglot-FF9800?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Microservices-K8s%20%2F%20Istio-009688?style=for-the-badge" />
-
-  <!-- Stacks -->
-  <img src="https://img.shields.io/badge/Backend-Rust-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Backend-Kotlin-7F52FF?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Datastore-PostgreSQL-336791?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Datastore-Cassandra-1287B1?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Cache-Redis-D92E2A?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Search-ElasticSearch-F8DC75?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Event%20Bus-Kafka-231F20?style=for-the-badge" />
-
-  <!-- Clients -->
-  <img src="https://img.shields.io/badge/iOS-SwiftUI-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Android-Compose-green?style=for-the-badge" />
-
-</p>
-Engineered to scale, built for performance. The proprietary social media platform successor.
 🔒 Confidentiality Notice
-This software is Proprietary and intended solely for internal organizational use. All source code, architectural designs, and associated documentation are confidential and must not be disseminated externally.
+
+This software is PROPRIETARY and intended only for internal organizational use.
+No source code, architectural diagrams, or documentation may be shared outside the organization.
+
+Violations trigger automatic audit logging + legal escalation.
+
+
+---
+
 🗺️ Architecture Overview
-Textile employs a Hybrid Polyglot Microservices Architecture to deliver high performance and exceptional scalability, with a clear separation of concerns between performance-critical and business-logic services.
-| Component | Technology Stack | Purpose |
-|---|---|---|
-| Performance Critical | Rust (Async, Tokio) | API Gateway, Media Processing, Real-Time WebSockets, High-Speed Caching. |
-| Business Logic | Kotlin (JVM) | CRUD Services (Post, User), Timeline, Messaging, Moderation, Analytics, Ads. |
-| Data Stores | PostgreSQL, Cassandra, Redis, Elasticsearch | Relational Data, High-Volume Time Series (DMs), Caching, Semantic Search. |
-| Infrastructure | Kubernetes, Istio, Terraform, Helm | Orchestration, Service Mesh, Infrastructure as Code (IaC). |
-| Event Bus | Apache Kafka | Asynchronous communication, notifications, and analytics ingestion. |
-| Clients | iOS (Swift/SwiftUI), Android (Kotlin/Compose) | Native, high-fidelity user experiences. |
-> Gating Strategy (Key Feature): All feature visibility (e.g., showing 'Follow' vs. 'Edit Profile') is driven by a backend-computed viewer_context returned by the user-service. The native clients utilize reusable ActionGater components to ensure consistent, secure, and error-proof UI rendering.
-> 
-For an in-depth system design, refer to docs/architecture/system-design.md.
+
+Textile adopts a Hybrid Polyglot Microservices Architecture, balancing extreme performance with clean business logic separation.
+
+Component	Technology Stack	Purpose
+
+Performance Critical	Rust (Tokio, async)	API Gateway, Media Pipeline, WebSockets, Ultra-fast Caching
+Business Logic	Kotlin (JVM)	User, Post, Timeline, Messaging, Moderation, Ads
+Data Stores	PostgreSQL, Cassandra, Redis, Elasticsearch	Relational, High-volume DMs, Caching, Vector Search
+Infrastructure	Kubernetes, Istio, Terraform, Helm	Workload orchestration, Meshing, IaC
+Event Bus	Kafka	Async events, notifications, analytics ingestion
+Native Clients	SwiftUI (iOS), Kotlin Compose (Android)	High-fidelity mobile UX
+
+
+
+---
+
+🔑 Gating Strategy (Critical Security Feature)
+
+All feature visibility—buttons, actions, entry points—is controlled entirely by backend-computed:
+
+viewer_context
+
+Clients never locally decide permission-based UI.
+All UI uses ActionGater components to ensure:
+
+no spoofed states
+
+no unauthorized actions
+
+fully consistent cross-platform behavior
+
+
+
+---
+
 ✨ Core Feature Set
-The platform includes a comprehensive set of features to rival large-scale social networks:
+
 📱 User Interaction
- * User Management: Profiles, following, blocking, verification, and GDPR/CCPA-compliant privacy controls.
- * Content & Engagement: CRUD operations for posts, replies, and quotes, plus likes, reposts, and bookmarks.
- * Real-Time Feeds: Algorithmic, personalized Timelines powered by ML ranking and integrated advertising.
- * Direct Messaging (DM): Real-time chat with typing indicators, attachments, and End-to-End Encryption.
- * Groups & Communities: Dedicated service for group creation, membership, and topic discovery.
+
+Profiles, follow system, blocks, verification
+
+CRUD for posts, replies, quotes
+
+Likes, reposts, bookmarks
+
+ML-personalized timelines
+
+Full DMs service with:
+
+Typing indicators
+
+Attachments
+
+Reactions
+
+Delivery receipts
+
+End-to-End Encryption
+
+
+
+
+---
+
 🧠 Intelligence & Performance
- * Recommendations: ML services employing Collaborative Filtering, Content-Based methods, and Trending analysis.
- * Search & Discovery: Full-text indexing via Elasticsearch, enhanced with Vector Embeddings for semantic search.
- * Media Processing: GPU-accelerated video transcoding, image compression, and thumbnail generation using dedicated Rust services.
- * Fault Tolerance: Circuit breakers and retry logic implemented across gRPC calls via Istio and shared middleware.
-🛡️ Security & Operations
- * Auth & Authz: JWT, OAuth2, and MFA support. Clear separation of Authentication (in Gateway) and Authorization (in auth-service).
- * Moderation: Automated toxicity and spam detection, bot classification, user reporting, and appeals management.
- * Analytics: Real-time event consumption via Kafka for metrics aggregation and impressions tracking.
- * Monetization: Dedicated services for Ads (Targeting & Auction) and Premium Subscriptions (Stripe/PayPal integration).
-💻 Getting Started (Local Development)
+
+Multi-model Recommendations
+
+Vector Semantic Search (Embeddings)
+
+GPU Media Transcoding (Rust pipelines)
+
+Smart Circuit Breakers + Retry Logic
+
+
+
+---
+
+🛡️ Security & Ops
+
+JWT, OAuth2, MFA
+
+Authentication via Gateway
+
+Authorization via auth-service
+
+Automated moderation pipeline
+
+Real-time analytics ingestion (Kafka)
+
+Ads targeting + premium monetization
+
+
+
+---
+
+💻 Local Development
+
 Prerequisites
-You will need the following tools installed and configured:
- * Docker and Docker Compose
- * Kubernetes (Local clusters like Minikube/K3s are helpful)
- * Terraform and Helm
- * Rust Toolchain (Stable)
- * JDK 17+ and Gradle (for Kotlin services)
- * Xcode (for iOS development) / Android Studio (for Android development)
-🚀 Setup and Execution
- * Clone the Repository:
-   git clone <internal-repository-url>
+
+Docker / Docker Compose
+
+Kubernetes (Minikube/K3s)
+
+Terraform & Helm
+
+Rust (stable)
+
+JDK 17+ / Gradle
+
+Xcode (iOS) / Android Studio
+
+
+
+---
+
+🚀 Setup & Execution
+
+Clone Repo
+
+git clone <internal-repository-url>
 cd Textile/backend
 
- * Initialize and Launch Backend:
-   # Set up databases, configurations, and shared libraries
+Initialize Backend
+
 ./scripts/setup.sh
-
-# Start all microservices in the background
 docker-compose up -d
+./scripts/seed-data.sh   # optional
 
-# Optional: Populate initial data for testing
-./scripts/seed-data.sh
+Client Setup
 
- * Client Setup:
-| Client | Directory | Setup Instruction |
-|---|---|---|
-| iOS | ../ios/ | Open Textile.xcodeproj in Xcode and run pod install. |
-| Android | ../android/ | Import android/ into Android Studio and Sync Gradle. |
+Client	Directory	Setup
+
+iOS	../ios/	Open project → pod install
+Android	../android/	Import to Android Studio → Sync Gradle
+
+
+
+---
+
 ✅ Testing
-Testing is multi-layered, ensuring reliability from unit level up to cross-service dependencies.
-| Type | Location | Command/Tool | Purpose |
-|---|---|---|---|
-| Unit | Service directories | ./scripts/test-all.sh | Validate individual component logic. |
-| Integration | backend/tests/integration/ | ./scripts/integration-tests.sh | Cross-service testing using Testcontainers (e.g., timeline-ads.kt). |
-| Client | Xcode / Android Studio | Built-in test runners | Validate UI functionality and gating logic. |
+
+Type	Location	Command	Purpose
+
+Unit	Each service	./scripts/test-all.sh	Validate logic
+Integration	backend/tests/integration	./scripts/integration-tests.sh	Cross-service
+Client	Mobile IDEs	Native runners	UI + gating verification
+
+
+
+---
+
 📄 Documentation
- * Architecture & Design: docs/architecture/
- * API Specification: docs/api/openapi.yaml
- * Runbooks & Operations: docs/runbooks/ (Deployment, Monitoring, Scaling procedures)
-🤝 Contribution Guidelines
-Contributions are strictly limited to internal team members.
- * Branch off of the main branch.
- * Follow the architectural and coding standards.
- * Submit Pull Requests (PRs) for review and approval by an assigned owner.
+
+docs/architecture/
+
+docs/api/openapi.yaml
+
+docs/runbooks/
+
+
+
+---
+
+🤝 Contribution Rules
+
+Internal developers only
+
+Branch from main
+
+Follow architecture guidelines
+
+PRs require owner approval
+
+
+
+---
+
 Last Updated: November 17, 2025
