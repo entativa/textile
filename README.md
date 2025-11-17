@@ -1,7 +1,7 @@
 🧶 Textile Platform
 
 <p align="center">
-  <img src="[txt.png]" alt="Textile Logo" width="180"/>
+  <img src="txt.png" alt="Textile Logo" width="180"/>
 </p><p align="center">
   <strong>A hyper-scalable, polyglot social platform engineered to surpass modern networks.</strong>
 </p>
